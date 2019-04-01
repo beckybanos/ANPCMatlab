@@ -1,3 +1,6 @@
+%Función que regresa si una matriz es estrictamente dominante, es decir si
+%todos los elementos de la matriz son estrictamente menores que los
+%elementos de su diagonal respectivamente a filas y columnas.
 function [domFil, domCol] = estrictamenteDominante(A)
     
     [~,n]=size(A);

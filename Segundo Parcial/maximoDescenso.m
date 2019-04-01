@@ -1,3 +1,5 @@
+%Función que clacula el máximo descenso de una matriz, es decir, que
+%cumplan las funciones de alpha dadas en clase
 function [x,i] = maximoDescenso(A,b,x)
     
     if ~isPositiveDefinite(A)

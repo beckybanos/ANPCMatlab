@@ -1,3 +1,7 @@
+%Metodo iterativo que busca la solución de x en un cierto número de
+%iteraciones. En este metodo utiliza la Diagonal, la triangular inferior y
+%la triangular superior. Realiza la operación necesaria para sacar la
+%solución
 function [x,i] = gaussSeidel1(A,b)
     L = tril(A,-1);
     U = triu(A,1);

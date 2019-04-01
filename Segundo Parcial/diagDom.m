@@ -1,3 +1,6 @@
+%Fucnion que determina si una matriz es estrictamente dominante, es decir,
+%si todos los elementos de la matriz son menores estrictamente que los
+%elementos de la diagonal en cada fila o columna dependiendo el caso
 function [res] = diagDom(A)
     AbsA = abs(A);
     

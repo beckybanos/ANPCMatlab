@@ -1,3 +1,4 @@
+%Función de Newton Raphson con muchas variables
 function [x,i] = newtonRaphsonVar(f,J,x)
     TOL = eps;
     MAX = 66;    

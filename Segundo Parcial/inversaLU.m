@@ -1,3 +1,5 @@
+%Función que calcula la iversa de una matriz utilizando las triangulares
+%superiores e inferiores de la matriz dada
 function [invA] = inversaLU(A)
     [m,n] = size(A);
     

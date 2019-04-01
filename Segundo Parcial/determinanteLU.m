@@ -1,3 +1,5 @@
+%Función que calcula el determinante de una matriz utilizando las
+%triangulares y la matriz de permutación
 function d = determinanteLU(A)
     [m,n] = size(A);
     [L,U,P,s] = lup(A);

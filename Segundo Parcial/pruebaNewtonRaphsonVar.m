@@ -1,4 +1,4 @@
-%Prueba de Newton Raphson de varias variables
+%Prueba de Newton Raphson de varias variables 
 % x = [y;z];
 
 f = @(x) [x(1)^2 + x(1)*x(2) - 10;

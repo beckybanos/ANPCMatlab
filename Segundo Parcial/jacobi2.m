@@ -1,3 +1,7 @@
+%Metodo iterativo que busca la solución de x en un cierto número de
+%iteraciones. En este metodo utiliza la Diagonal, la triangular inferior y
+%la triangular superior. Busca el elemento adecuado a operar en las
+%matrices triangulares y diagonal para poder operar adecuadamente
 function [x,i] = jacobi2(A,b)
     D = diag(diag(A));
     U = triu(A,1);

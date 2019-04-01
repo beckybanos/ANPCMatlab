@@ -1,4 +1,4 @@
-%Ejercicio con 3 ecuaciones NewtonRaphson
+%Ejercicio con 3 ecuaciones NewtonRaphsonVariables
 
 % x = [x1;x2;x3];
 

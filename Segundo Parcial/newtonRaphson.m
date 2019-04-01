@@ -1,3 +1,4 @@
+%Método de Newton Raphson
 function [x,i] = newtonRaphson(f,x)
     TOL = eps;
     MAX = 66;    

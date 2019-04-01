@@ -1,3 +1,5 @@
+%Resuelve una matriz en forma cuadrática para represetar las curvas de
+%nivel. 
 %Forma cuadrática
 
 A = [1,0;0,2];  %tiene que ser positiva definida

@@ -1,4 +1,4 @@
-% Prueba Máximo descenso
+% Prueba funcion Máximo descenso
 
  A= [4,-1,0;-1,4,-1;0,-1,4];
  b = [2;6;2];

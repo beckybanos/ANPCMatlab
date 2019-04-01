@@ -1,3 +1,7 @@
+%Metodo iterativo que busca la solución de x en un cierto número de
+%iteraciones. En este metodo utiliza la Diagonal, la triangular inferior y
+%la triangular superior. Minimiza la función de la iteración demostrada
+%algebraicamente para que sea más rápido el proceso de encontrar la nueva x
 function [x,i] = gaussSeidel4(A,b)
     
     D = diag(diag(A));

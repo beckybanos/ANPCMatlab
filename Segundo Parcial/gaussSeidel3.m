@@ -1,3 +1,9 @@
+%Metodo iterativo que busca la solución de x en un cierto número de
+%iteraciones. En este metodo utiliza la Diagonal, la triangular inferior y
+%la triangular superior. Realiza la operación buscando el elemento
+%necesario de la matriz para operarlo de acuerdo a la iteración
+%correspondiente. El resultado encontrado se va agregando al vector de
+%solución de x
 function [x,i] = gaussSeidel3(A,b)
 
     TOL = eps;

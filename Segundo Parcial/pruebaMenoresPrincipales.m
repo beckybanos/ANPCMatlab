@@ -1,4 +1,4 @@
-%Prueba de menores principales
+%Prueba de la funcion menores principales
 
 A = [1,-2,4;-5,2,0;1,0,3];
 B = [1,-2,4,6;-5,2,0,4;1,0,3,2;8,-6,4,8];

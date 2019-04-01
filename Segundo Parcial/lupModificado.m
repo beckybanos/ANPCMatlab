@@ -1,3 +1,5 @@
+%Mismo método de LUP que regresa además un vector dependiendo las
+%permutaciones realizadas en la matriz P
 function [L,U,P,s,vs] = lupModificado(A)
     [~,n] = size(A);    %Agregar chequeo de error
     U = A;

@@ -1,3 +1,5 @@
+%Función que calcula los menors principales de una matriz, es decir el
+%determinante de las submatrices de A y verifica si son mayores que cero
 function [x,mp] = menoresPrincipales(A)
     [m,n] = size(A);
     if m~=n
