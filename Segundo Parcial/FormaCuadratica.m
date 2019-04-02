@@ -6,14 +6,14 @@ A = [1,0;0,2];  %tiene que ser positiva definida
 b = [1;2];
 
 qf = @(A,b,x1,x2)(1/2)*(A(1,1)*x1.^2 + (A(1,2)+A(2,1))*x1.*x2 + ...
-    A(2,2)*x2.^2)-(b(1)*x1 + b(2)*x2) + (1/2)*b'*(A\b);
+    A(2,2)*x2.^2)-(b(1)*x1 + b(2)*x2) + (1/2)*b'*(A\b); %Función que calcula curvas de nivel
 
-x1 = 0:0.1:2;
+x1 = 0:0.1:2;   %Vectores generados hasta llegar a 2
 x2 = 0:0.1:2;
-[X1,X2] = meshgrid(x1,x2);
+[X1,X2] = meshgrid(x1,x2);  %Crea malla en la gráfica 2D
 
-f = qf(A,b,X1,X2);  %son todos los puntos evaluados
-mesh(X1,X2,f);
+f = qf(A,b,X1,X2);  %Son todos los puntos evaluados
+mesh(X1,X2,f);  %Crea malla de color sobre curva
 xlabel('x1');
 ylabel('x2');
 hold on;
@@ -26,7 +26,7 @@ pause (5);
 quiver(x1,x2,-fx,-fy);
 hold off;
 
-minValue = min(min(f)); %Calcula mínimo de f
+% minValue = min(min(f)); %Calcula mínimo de f
 
 [col,i] = min(f);    %col todos los minimos de cada columna e i en que índice están 
 [~,jmin] = min(col);
