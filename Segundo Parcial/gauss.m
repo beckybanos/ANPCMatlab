@@ -1,4 +1,4 @@
-%Método de eliminación de Gauss de Marcelito
+%Método de eliminación de Gauss de Clase
 function [x] = gauss(A,b)
     [m,n] = size(A); 
     if m~=n

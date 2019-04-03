@@ -1,3 +1,4 @@
+%Rebeca Baños García 157655
 %Metodo iterativo que busca la solución de x en un cierto número de
 %iteraciones. En este metodo utiliza la Diagonal, la triangular inferior y
 %la triangular superior. Realiza la operación necesaria para sacar la

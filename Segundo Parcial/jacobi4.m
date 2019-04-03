@@ -1,5 +1,6 @@
+%Rebeca Baños García 157655
 %Metodo iterativo que busca la solución de x en un cierto número de
-%iteraciones. En este metodo utiliza el despeje de la formula con D 
+%iteraciones.
 function [x,i] = jacobi4(A,b)
     D = diag(diag(A));
 
