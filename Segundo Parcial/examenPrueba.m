@@ -24,15 +24,30 @@
 %alfa(i) = (r´(i)*r(i))/(r(i)'*A*r(i))
 %r'(i+1)*r(i) = 0
 
-
+%Problema 3:
 %Representado en Matlab:
 %x(1)^2 + x(1)*x(2) = 10
 %x(2) + 3*x(1)*x(2)^2 = 57
 f = @(x) [ x(1)^2 + x(1)*x(2) - 10 ;
  x(2) + 3*x(1)*x(2)^2 - 57 ];
+
 J = @(x) [ 2*x(1) + x(2), x(1);
  3*x(2)^2, 1 + 6*x(1)*x(2) ];
+
+
+%Sacar jacobiano
+syms xs1 xs2;
+xs = [xs1;xs2];
+fs = [ xs1^2 + xs1*xs2 - 10 ;
+       xs2 + 3*xs1*xs2^2 - 57 ];
+      
+Js = jacobian(fs,xs)
 
 % La aproximación inicial no puede ser [0;0] porque la Jacobiana sería 0
 x = [1.5; 3.5];
 [y,iter] = newtonRaphsonVar(f,J,x) % [2;3]
+
+
+
+
+
