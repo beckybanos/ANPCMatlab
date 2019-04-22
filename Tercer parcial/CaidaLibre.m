@@ -34,6 +34,7 @@ hold on;
 %     v(i+1) = v(i) + h*f(v(i));   %(g - (cd/m)*v(i)^2)
 % end 
 
+% f = @(t,v) g - (cd/m)*v^2;
 [t,y] = euler(f,0,10,0,0.1);
 
 plot(t,v);
