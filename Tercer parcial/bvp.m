@@ -22,3 +22,22 @@ g = @(s) shooting1(f,t0,tf,y0,y1,h,s);
 yz0 = [y0,z0];
 [t,yz] = ivps(f,t0,tf,yz0,h,4);
 plot(t,yz(1,:));
+
+%Diferencias finitas
+r = zeros(N-2);
+r(1) = -1;
+r(N-2) = -3;
+e = ones(N-2);
+f = -(2+4*h^2)*ones(N-2);
+g = ones(N-2);
+[w] = tridiag(e,f,g,r);
+y = zeros(N);
+y(1) = 1;
+y(2:N-1) = w;
+y(N) = 3;
+plot(y);
+
+
+
+
+
