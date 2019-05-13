@@ -1,3 +1,4 @@
+%Rebeca Baños García    157655
 %Método ivps (inicial value problem solution) donde soluciona una ecuacióm diferencial dependiendo el
 %método qeu se solicite. Recibe la función, el tiempo inicia, el tiempo
 %final, los valores iniciales, la distancia de salto h y el método que se
@@ -14,8 +15,10 @@ function [t,y] = ivps(f,t0,tf,y0,h,solver)
             fhandle = @trap;
         case 3 
             fhandle = @midpoint;
-        otherwise
+        case 4
             fhandle = @rk4;
+        otherwise
+            fhandle = @ralston;
     end
     
     t = t0:h:tf;
@@ -49,6 +52,12 @@ function [t,y] = ivps(f,t0,tf,y0,h,solver)
         s3 = f(t+h/2,y + (h/2)*s2);
         s4 = f(t+h,y + h*s3);
         phi = (s1 + 2*s2 + 2*s3 + s4)/6;
+    end
+
+    function phi = ralston(f,t,y,h)
+        s1 = f(t,y);
+        s2 = f(t+(3/4)*h,y+(3/4)*s1*h);
+        phi = y + ((1/3)*s1+(2/3)*s2)*h;
     end
 end
 
