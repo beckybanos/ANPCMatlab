@@ -1,3 +1,5 @@
+%Método de bisección, parte de buscar dos soluciones qeu den un signo
+%distinto de la función y de ahí encuentra el cero
 function [x, i] = biseccion(f, a, b)
     
     if sign(f(a))*sign(f(b)) >= 0

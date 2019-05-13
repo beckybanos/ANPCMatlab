@@ -1,3 +1,5 @@
+%Método de euler. Obtiene la solución sacando la pendiente de un punto
+%inicial hasta una distancia h qeu va de ti a ti+1
 function [t,y] = euler(f,t0,tf,y0,h)
     t = t0:h:tf;
     y = zeros(size(t));

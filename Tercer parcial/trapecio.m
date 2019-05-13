@@ -1,3 +1,9 @@
+%Regla de integración por trapecio. Traza un trapecio sobre la curva a
+%integrar. Va del punto inicial al final junto con los borde sy toda la
+%base.
+%Le entra la función, el punto en e tiempo cero, en el tiempo final, el
+%punto inicial y la distancia de cada evaluación.
+%El resultado de la integral es el área bajo el trapecio formado
 function [t,y] = trapecio(f,t0,tf,y0,h)
     t = t0:h:tf;
     y = zeros(size(t));

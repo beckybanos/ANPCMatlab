@@ -1,3 +1,10 @@
+%Método ivps (inicial value problem solution) donde soluciona una ecuacióm diferencial dependiendo el
+%método qeu se solicite. Recibe la función, el tiempo inicia, el tiempo
+%final, los valores iniciales, la distancia de salto h y el método que se
+%desee usar. En este caso 1 es euler, 2 es trapecio, 3 es punto medio y 4
+%es RK4.
+%El método regresa el cambio en el tiempo junto con las soluciones de cad
+%tiempo avanzado.
 function [t,y] = ivps(f,t0,tf,y0,h,solver)
 
     switch solver

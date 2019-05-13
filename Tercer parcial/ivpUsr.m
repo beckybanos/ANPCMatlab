@@ -1,4 +1,4 @@
-%Problemas de valor inicial
+%Problemas de valor inicial utilizando el método ivps
 %Ecuaciones de primer orden
 
 %y(0) =1
