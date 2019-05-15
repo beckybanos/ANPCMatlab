@@ -56,8 +56,8 @@ function [t,y] = ivps(f,t0,tf,y0,h,solver)
 
     function phi = ralston(f,t,y,h)
         s1 = f(t,y);
-        s2 = f(t+(3/4)*h,y+(3/4)*s1*h);
-        phi = y + ((1/3)*s1+(2/3)*s2)*h;
+        s2 = f(t+(3*h/4),y+(3*h/4)*s1);
+        phi = y + (s1+2*s2)/3;
     end
 end
 
