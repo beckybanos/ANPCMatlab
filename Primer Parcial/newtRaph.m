@@ -1,3 +1,6 @@
+%Método de Newton Raphson: parte de una suposicion inicial y la evalua en
+%la función, de ahí saca la tangente hacai el eje x y es tu principal
+%aproximación. Convergencia es cuadrática
 function [x, i] = newtRaph(f, a, b)
     
     if sign(f(a))*sign(f(b)) >= 0

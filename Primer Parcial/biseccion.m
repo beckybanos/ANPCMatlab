@@ -1,13 +1,15 @@
+%Método de bisección, parte por tener dos suposiciones iniciales que sean
+%de diferente signo para que la raíz este dentro de ese intervalo. 
 function [x, i] = biseccion(f, a, b)
     
-    if sign(f(a))*sign(f(b)) >= 0
+    if sign(f(a))*sign(f(b)) >= 0   %Checa si son diferentes
         error('f(a)f(b)<0 no se satisface')
     end 
     
     TOL = eps;
     max = log2((b-a)/eps(a));
     fa = f(a);
-    x = (a+b)/2; fx = f(x);    
+    x = (a+b)/2; fx = f(x);    %Bisección
     i = 0;
     intervalo = num2hex(abs(b-a));
     fprintf('%2i %20.16f %20.16f %s \n',i,x,fx,intervalo); %print con formato: 2 columnas para la i, 20 columnas para

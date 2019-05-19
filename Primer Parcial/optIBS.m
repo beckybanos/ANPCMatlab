@@ -1,3 +1,4 @@
+%Método interpolación parabólica. Necesita 3 puntos iniciales.
 function [x,i] = optIBS(f,x0,x1,x2)
     f0 = f(x0);
     f1 = f(x1);

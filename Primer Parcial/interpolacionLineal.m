@@ -1,6 +1,9 @@
+
+%Método de interpolación lineal. Parecido al de bisección, parte de formar
+%una linea recta de las soposiciones iniciales y choca con el cero
 function [x, i] = interpolacionLineal(f, a, b)
     
-    if sign(f(a))*sign(f(b)) >= 0
+    if sign(f(a))*sign(f(b)) >= 0       %Checa si son de signo distinto las soposiciones inciales
         error('f(a)f(b)<0 no se satisface')
     end 
     MAX = 66;

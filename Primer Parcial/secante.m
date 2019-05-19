@@ -1,3 +1,7 @@
+%Método de la secante: patrte de dos suposiciones iniciales en las que no
+%requiere que sean de signo diferente. Las evalua en la función y traza un
+%segmento, el cual lo extiende hasta el eje y del resultado se convierte el
+%valor evaluado en la función en el nuevo valor, es decir, se recorren.
 function [x,i] = secante(f,x,y)
     TOL = eps;
     MAX = 66;    

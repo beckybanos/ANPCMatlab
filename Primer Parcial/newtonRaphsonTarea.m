@@ -1,4 +1,4 @@
-function [i] = newtonRaphson(x0, f)
+function [i] = newtonRaphsonTarea(x0, f)
 i=1;    %contador
 fx(i)=x0;   %valor inicial en la funcion
  

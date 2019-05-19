@@ -1,3 +1,7 @@
+%Método de proporción aúrea: partes de la distancia que hay entre las x,
+%se saca la relacion de li y l2 y su respectiva distancia para poder sacar
+%el minimo. Una vez que se obtiene el minimo, se elimina la parte donde no
+%esta y adquieren nuevos valores
 function [x,i] = optAurea(f,a,b)
     phi = (1+sqrt(5))/2;
     g = phi - 1;
