@@ -1,9 +1,8 @@
-%Metodo iterativo que busca la soluci髇 de x en un cierto n鷐ero de
-%iteraciones. En este metodo utiliza la Diagonal, la triangular inferior y
-%la triangular superior. Realiza la operaci髇 buscando el elemento
-%necesario de la matriz para operarlo de acuerdo a la iteraci髇
+%Metodo iterativo que busca la soluci贸n de x en un cierto n煤mero de
+%iteraciones. En este metodo utilizamos la matriz normal. Realiza la operaci贸n
+%buscando el elemento necesario de la matriz para operarlo de acuerdo a la iteraci贸n
 %correspondiente. El resultado encontrado se va agregando al vector de
-%soluci髇 de x
+%soluci贸n de x
 function [x,i] = gaussSeidel3(A,b)
 
     TOL = eps;
