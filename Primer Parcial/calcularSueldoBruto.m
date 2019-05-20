@@ -1,3 +1,4 @@
+%Método que calcula el sueldo bruto a partir de una hoja de excel
 function [sueldoB]=calcularSueldoBruto(sueldoN)
 
 matriz=xlsread('tablas','A2:D12');

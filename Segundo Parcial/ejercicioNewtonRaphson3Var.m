@@ -1,4 +1,7 @@
 %Ejercicio con 3 ecuaciones NewtonRaphsonVariables
+%3*x(1)-cos(x(2)*x(3)) - 3/2;
+%4*x(1)^2-625*x(2)^2+2*x(2)-1;
+%exp(-x(1)*x(2)) + 20*x(3) + (10*pi-30)/3
 
 % x = [x1;x2;x3];
 

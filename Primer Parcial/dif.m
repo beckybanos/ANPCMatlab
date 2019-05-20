@@ -7,7 +7,7 @@ derivada = matlabFunction(derivadaS);
 valorVerdadero = derivada(x);
 
 % h = 0.5;
-h = 1;
+% h = 1;
 
 % ss = zeros(1,n);    %step size
 % fd = zeros(1,n);    %derivada aprox
@@ -24,6 +24,7 @@ i = 0:1:n-1;
 h = 1./10.^i;
 fd = (f(x+h) - f(x-h))./(2*h);
 te = abs(valorVerdadero - fd);
+% ss = h;
 
 end
 
